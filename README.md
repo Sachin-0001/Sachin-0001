@@ -88,6 +88,5 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Sachin-0001&show_icons=true&include_all_commits=true&count_private=true&theme=vision-friendly-dark&hide_border=true" height="150" alt="stats graph" />
   <img src="https://streak-stats.demolab.com?user=Sachin-0001&theme=midnight-purple&hide_border=true&border_radius=5" height="150" alt="streak graph" />
-  <!-- Hide JS to let Python dominate -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sachin-0001&layout=compact&langs_count=6&hide=javascript,css,html&theme=vision-friendly-dark&hide_border=true" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sachin-0001&layout=compact&langs_count=6&theme=vision-friendly-dark&hide_border=true" height="150" alt="languages graph" />
 </div>
