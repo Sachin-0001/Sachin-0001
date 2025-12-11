@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="left">I'm Sachin, a student from Bengaluru. I specialize in Web Development, with a passion for becoming a ML Engineer. Always eager to collaborate and explore new technologies!</h4>
+<h4 align="left">I'm Sachin, a student from Bengaluru. I specialize in Machine Learning, with basic skills in Full Stack Web Development. Always eager to collaborate and explore new technologies!</h4>
 
 ###
 
@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Debugging since 2019<br>📚 I'm currently learning Python to expand my skills<br>🌍 Open to collaboration on: Python, ML projects.</p>
+<p align="left">✨ Debugging since 2019<br>📚 I'm currently exploring Agentic AI<br>🌍 Open to collaboration on: ML/DL/LLM based projects.</p>
 
 ###
 
