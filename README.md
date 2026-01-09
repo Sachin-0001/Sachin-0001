@@ -1,94 +1,124 @@
-<h1 align="left">Hey 👋 What's up?</h1>
+<h1 align="left">Hey 👋 I'm Sachin</h1>
 
-###
+<h4 align="left">
+Machine Learning Engineer in the making | Agentic AI & LLM Systems<br>
+Student @ Bengaluru • Strong ML foundations • Systems-first mindset
+</h4>
 
-<h4 align="left">I'm Sachin, a student from Bengaluru. I specialize in Machine Learning, with basic skills in Full Stack Web Development. Always eager to collaborate and explore new technologies!</h4>
+---
 
-###
+<h2 align="left">👨‍💻 About Me</h2>
 
-<h2 align="left">About me 😁</h2>
+<p align="left">
+🧠 Debugging models & systems since 2019<br>
+🔬 Focused on Machine Learning, Deep Learning, and LLM-based systems<br>
+🤖 Currently exploring <b>Agentic AI, RAG, multi-agent reasoning</b><br>
+🛠 Believe in building ML <i>from scratch</i>, not just calling APIs<br>
+🌍 Open to collaboration on <b>ML / DL / LLM / Applied AI</b> projects
+</p>
 
-###
+---
 
-<p align="left">✨ Debugging since 2019<br>📚 I'm currently exploring Agentic AI<br>🌍 Open to collaboration on: ML/DL/LLM based projects.</p>
+<h2 align="left">🧠 Core ML Focus</h2>
 
-###
+<ul>
+  <li>Classical ML algorithms (from scratch & theory-driven)</li>
+  <li>Deep Learning fundamentals (training dynamics, optimization)</li>
+  <li>LLMs, RAG pipelines, vector search, retrieval strategies</li>
+  <li>Agentic workflows (planning, tools, memory, evaluation)</li>
+  <li>ML experimentation, tracking, and reproducibility</li>
+</ul>
 
-<h2 align="left">I code with 🧑‍💻</h2>
+---
 
-###
+<h2 align="left">🧑‍💻 Tech Stack</h2>
 
+<h4 align="left">Machine Learning & AI</h4>
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50" alt="python logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="50" alt="numpy logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="50" alt="scikit-learn logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" height="50" alt="streamlit logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/mlflow/0194E2" height="50" alt="mlflow logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/github/181717" height="50" alt="dagshub logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="50" alt="docker logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="50" alt="nextjs logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="50" alt="typescript logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="50" alt="java logo" />
-  <img width="15" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" alt="javascript logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="50" alt="nodejs logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="50" alt="tailwindcss logo" />
-  <img width="15" />
-  <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="react logo" width="54" height="54" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="50" alt="mongodb logo" />
-  <img width="15" />
-  <img src="https://cdn.simpleicons.org/git/F05032" height="50" alt="git logo" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=c" height="50" alt="c logo" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=express" height="50" alt="express logo" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="50" alt="mysql logo" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=bootstrap" height="50" alt="bootstrap logo" />
-  <img width="15" />
-  <img src="https://skillicons.dev/icons?i=github" height="50" alt="github logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50"/>
+  <img width="15"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="50"/>
+  <img width="15"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="50"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" height="50"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/mlflow/0194E2" height="50"/>
 </div>
 
-###
+<h4 align="left">LLM & Agentic Systems</h4>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=openai" height="45"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/langchain/1C3C3C" height="45"/>
+</div>
 
-<h2 align="left">Social Links 🌐</h2>
 
-###
+<h4 align="left">Backend & Full Stack (Supporting Skills)</h4>
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="45"/>
+  <img width="15"/>
+  <img src="https://techstack-generator.vercel.app/react-icon.svg" height="50"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/nodedotjs/339933" height="45"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/mongodb/47A248" height="45"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="45"/>
+</div>
+
+<h4 align="left">Systems & Tooling</h4>
+<div align="center">
+  <img src="https://cdn.simpleicons.org/git/F05032" height="45"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/github/181717" height="45"/>
+  <img width="15"/>
+  <img src="https://cdn.simpleicons.org/docker/2496ED" height="50"/>
+</div>
+
+---
+
+<h2 align="left">🚀 What I Like Building</h2>
+
+<ul>
+  <li>LLM-powered assistants with retrieval & reasoning</li>
+  <li>Agent-based systems with constraints (latency, params, memory)</li>
+  <li>ML pipelines with proper evaluation & tracking</li>
+  <li>Projects that <b>force understanding</b>, not shortcuts</li>
+</ul>
+
+---
+
+<h2 align="left">🌐 Connect With Me</h2>
 
 <div align="left">
   <a href="https://www.linkedin.com/in/sachin-suresh-06782b300/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="55" height="40" alt="linkedin logo" />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="55" height="40"/>
   </a>
   <a href="mailto:sachin.samprit@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="55" height="40" alt="gmail logo" />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="55" height="40"/>
   </a>
 </div>
 
-###  
+---
 
-<h2 align="left">Github Stats 📈 
+<h2 align="left">📊 GitHub Stats</h2>
+
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=Sachin-0001&label=Profile%20views&color=0e75b6&style=flat" alt="Sachin-0001" />
+  <img src="https://komarev.com/ghpvc/?username=Sachin-0001&label=Profile%20views&color=0e75b6&style=flat"/>
 </p>
-</h2>  
-
-###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sachin-0001&show_icons=true&include_all_commits=true&count_private=true&theme=vision-friendly-dark&hide_border=true" height="150" alt="stats graph" />
-  <img src="https://streak-stats.demolab.com?user=Sachin-0001&theme=midnight-purple&hide_border=true&border_radius=5" height="150" alt="streak graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sachin-0001&layout=compact&langs_count=6&theme=vision-friendly-dark&hide_border=true" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Sachin-0001&show_icons=true&rank_icon=github&theme=vision-friendly-dark&hide_border=true&cache_seconds=1800" height="150"/>
+
+  <img src="https://streak-stats.demolab.com?user=Sachin-0001&theme=vision-friendly-dark&hide_border=true&cache_seconds=1800" height="150"/>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sachin-0001&layout=compact&langs_count=6&theme=vision-friendly-dark&hide_border=true&cache_seconds=1800" height="150"/>
 </div>
+
+
+---
+
+<h4 align="center">
+“Strong ML engineers don’t just run models — they understand why they work.”
+</h4>
