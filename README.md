@@ -1,19 +1,17 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1200&color=E2E8F0&center=true&vCenter=true&width=600&lines=Machine+Learning+Engineer;Agentic+AI+%26+LLM+Systems;Build+from+scratch.+Understand+deeply." alt="Typing SVG" />
-
-<br/>
-
 # Sachin Suresh
 
-<sup>ML Engineer &nbsp;·&nbsp; Bengaluru, India &nbsp;·&nbsp; Building intelligence from first principles</sup>
+**AI / ML Engineer** &nbsp;·&nbsp; Bengaluru, India
+
+<sub>Agentic runtimes, retrieval systems, and the infrastructure underneath them.</sub>
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-suresh-06782b300/)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sachin.samprit@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-161B22?style=flat-square&logo=github&logoColor=white)](https://github.com/Sachin-0001)
-[![Profile Views](https://komarev.com/ghpvc/?username=Sachin-0001&style=flat-square&color=475569&label=views)](https://github.com/Sachin-0001)
+[![GitHub](https://img.shields.io/badge/GitHub-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-1e293b?style=flat-square&logo=linkedin&logoColor=e2e8f0)](https://www.linkedin.com/in/sachin-suresh-06782b300/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1e293b?style=flat-square&logo=vercel&logoColor=e2e8f0)](YOUR_PORTFOLIO_URL)
+[![Email](https://img.shields.io/badge/Email-1e293b?style=flat-square&logo=gmail&logoColor=e2e8f0)](mailto:sachin.samprit@gmail.com)
 
 </div>
 
@@ -23,29 +21,16 @@
 
 <br/>
 
-## `$ whoami`
+I write the loop before I reach for the framework. Most of what I build sits where model behaviour meets systems engineering: how a reasoning loop actually terminates, why a retriever surfaces the wrong chunk, what a tool-calling agent does when the tool fails. Frameworks abstract away exactly the part worth understanding, so I tend to implement it once by hand first.
 
-I build ML systems from mathematical foundations up — not from API calls down.
-
-Since 2023, the question driving my work has been *why* models behave the way they do, not merely *that* they work. That mindset shapes everything: from hand-coding neural nets in NumPy to architecting production-grade agentic pipelines. Currently deep in the intersection of **LLM reasoning**, **RAG**, and **multi-agent systems**.
-
-```python
-# present_state.py
-
-profile = {
-    "name":     "Sachin Suresh",
-    "role":     "Machine Learning Engineer",
-    "location": "Bengaluru, India",
-    "mindset":  "Systems-first, theory-driven",
-}
-
-focus = {
-    "research":  ["Agentic AI", "Multi-agent Systems", "RAG Pipelines"],
-    "building":  ["LLM-based systems", "ML from fundamentals"],
-    "learning":  ["Deep learning optimization", "Retrieval strategies"],
-}
-
-principle = "Build from scratch. Understand deeply. Ship with confidence."
+```
+llm systems
+│
+├─ agents ......... planning loops, tool calling, safeguard models
+├─ retrieval ...... chunking, embeddings, reranking, citations
+├─ models ......... fine-tuning, quantization, evaluation
+├─ serving ........ FastAPI services, queues, streaming, tracing
+└─ infra .......... containers, CI gates, cloud deploys
 ```
 
 <br/>
@@ -54,15 +39,38 @@ principle = "Build from scratch. Understand deeply. Ship with confidence."
 
 <br/>
 
-## `TL;DR`
+## projects
 
-| | |
-|---|---|
-| 🧠 **Core focus** | Agentic AI, RAG, multi-agent reasoning |
-| 🔬 **Approach** | Theory-first, from-scratch implementations |
-| 🛠 **Primary stack** | Python · PyTorch · LangChain · HuggingFace |
-| 📍 **Location** | Bengaluru, India |
-| 🤝 **Open to** | ML research · LLM systems · Agentic AI collaboration |
+### Harness
+**A tool-calling agent runtime, written without a framework.**
+
+No LangGraph, no AutoGPT. Six tools (web search, weather, calculator, sandboxed code execution, file I/O, email) wired into a bounded reasoning loop, with a second model screening inputs, tool calls, and outputs before anything executes. Memory is two-tier: an LLM-distilled episodic log feeding a 384-dim FAISS index for recall across sessions.
+
+`Python` · `LangChain` · `Groq` · `FAISS` · `HuggingFace`
+
+[![Source](https://img.shields.io/badge/source-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001/HARNESS_REPO)
+
+<br/>
+
+### UnBind
+**Legal contract analysis with verifiable citations.**
+
+Ingests PDFs, DOCX, and photographed contracts, then fans out clause-by-clause risk analysis in parallel with live progress over SSE. The Q&A engine anchors every answer to character offsets in the source document, so claims can be checked rather than trusted. Payments hardened with HMAC-SHA256 verification and atomic quota enforcement, behind a 299-test suite gated in CI by ruff, eslint, tsc, and secret scanning. Ships as a web app and an npm CLI.
+
+`Next.js 15` · `FastAPI` · `MongoDB` · `ChromaDB` · `Groq` · `Razorpay`
+
+[![Live](https://img.shields.io/badge/live-1e293b?style=flat-square&logo=vercel&logoColor=e2e8f0)](https://unbindai.vercel.app)
+[![Source](https://img.shields.io/badge/source-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001/UNBIND_REPO)
+[![npm](https://img.shields.io/badge/npm-1e293b?style=flat-square&logo=npm&logoColor=e2e8f0)](https://www.npmjs.com/package/@sachin-0001/unbind)
+
+<br/>
+
+### Parameter-Efficient Fine-Tuning
+**Adapting 7B models on a single GPU budget.**
+
+QLoRA on Mistral-7B-Instruct-v0.2 over an Alpaca-style instruction set: 41.94M trainable parameters, 0.57% of 7.28B, under 4-bit quantization and tracked end to end with MLflow. A second run applied LoRA at r=16 to Qwen2.5-1.5B-Instruct for conversational generation, touching 0.28% of parameters.
+
+`PyTorch` · `PEFT` · `QLoRA` · `MLflow` · `HuggingFace`
 
 <br/>
 
@@ -70,35 +78,9 @@ principle = "Build from scratch. Understand deeply. Ship with confidence."
 
 <br/>
 
-## Expertise
+## open source
 
-<details open>
-<summary><strong>🔬 &nbsp;Foundations</strong></summary>
-<br/>
-
-| Area | Details |
-|------|---------|
-| **Classical ML** | Theory-driven implementations built from scratch |
-| **Deep Learning** | Training dynamics, optimization, architecture design |
-| **Mathematics** | Linear algebra, multivariate calculus, probability & statistics |
-| **Experimentation** | MLflow tracking, reproducibility, versioning |
-
-</details>
-
-<br/>
-
-<details open>
-<summary><strong>🚀 &nbsp;Applied AI</strong></summary>
-<br/>
-
-| Area | Details |
-|------|---------|
-| **Large Language Models** | Fine-tuning, prompt engineering, evaluation frameworks |
-| **RAG Systems** | Vector search, reranking, chunking strategies, context optimization |
-| **Agentic AI** | Planning loops, tool use, memory architectures, reasoning chains |
-| **Multi-agent Systems** | Agent coordination, communication protocols, emergent behavior |
-
-</details>
+Contributing to **[headlamp-k8s/plugins](https://github.com/headlamp-k8s/plugins)**, the plugin ecosystem for the Kubernetes web UI, as part of LFX Mentorship Term 3. Work so far spans a cert-manager expiry display fix, secret redaction in the AI assistant plugin, and accessibility improvements to dashboard charts.
 
 <br/>
 
@@ -106,47 +88,23 @@ principle = "Build from scratch. Understand deeply. Ship with confidence."
 
 <br/>
 
-## Stack
-
-**ML & AI Core**
-
-![Python](https://img.shields.io/badge/Python-0f172a?style=flat-square&logo=python&logoColor=3b82f6)
-![PyTorch](https://img.shields.io/badge/PyTorch-0f172a?style=flat-square&logo=pytorch&logoColor=EE4C2C)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-0f172a?style=flat-square&logo=tensorflow&logoColor=FF6F00)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0f172a?style=flat-square&logo=scikitlearn&logoColor=F7931E)
-![NumPy](https://img.shields.io/badge/NumPy-0f172a?style=flat-square&logo=numpy&logoColor=4DABCF)
-![MLflow](https://img.shields.io/badge/MLflow-0f172a?style=flat-square&logo=mlflow&logoColor=0194E2)
-
-**LLM & Agentic Systems**
-
-![LangChain](https://img.shields.io/badge/LangChain-0f172a?style=flat-square&logo=langchain&logoColor=84cc16)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-0f172a?style=flat-square&logo=huggingface&logoColor=FFD21E)
-![OpenAI](https://img.shields.io/badge/OpenAI-0f172a?style=flat-square&logo=openai&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-0f172a?style=flat-square&logo=streamlit&logoColor=FF4B4B)
-
-**Infrastructure & Tooling**
-
-![Docker](https://img.shields.io/badge/Docker-0f172a?style=flat-square&logo=docker&logoColor=2496ED)
-![Linux](https://img.shields.io/badge/Linux-0f172a?style=flat-square&logo=linux&logoColor=FCC624)
-![Git](https://img.shields.io/badge/Git-0f172a?style=flat-square&logo=git&logoColor=F05032)
-![Next.js](https://img.shields.io/badge/Next.js-0f172a?style=flat-square&logo=nextdotjs&logoColor=white)
-
-<br/>
-
----
-
-<br/>
-
-## What I Build
+## stack
 
 ```
-intelligent systems
-├── agents/               # Planning, tool use, memory, autonomous reasoning
-├── rag-pipelines/        # Vector search · reranking · context optimization
-└── ml-workflows/         # End-to-end pipelines · experiment tracking · reproducibility
-```
+languages     Python · TypeScript · Go · C++
 
-Every project is built to force a deeper understanding — not to shortcut it.
+agentic/llm   LangGraph · LangChain · LangSmith · HuggingFace
+              Groq · Ollama · n8n
+
+ml            PyTorch · scikit-learn · NumPy · Pandas · OpenCV
+              PEFT/QLoRA · MLflow
+
+backend       FastAPI · Pydantic · Next.js
+
+data          PostgreSQL · MongoDB · Redis · ChromaDB · FAISS
+
+cloud         AWS · Docker · GitHub Actions · Airflow · Vercel
+```
 
 <br/>
 
@@ -154,25 +112,43 @@ Every project is built to force a deeper understanding — not to shortcut it.
 
 <br/>
 
-## GitHub Activity
+## experience
+
+**Capmob Financial Services** — Lead AI Engineer Intern &nbsp;·&nbsp; <sub>Jun 2026 – Present</sub>
+
+**XTrail Consulting Services** — Junior Developer Intern &nbsp;·&nbsp; <sub>Jan 2026 – Jun 2026</sub>
+
+<sub>Both under NDA. Happy to discuss approach and trade-offs, not internals.</sub>
+
+<br/>
+
+---
+
+<br/>
+
+## background
+
+**B.E. Computer Science**, Dayananda Sagar College of Engineering &nbsp;·&nbsp; <sub>2023 – 2027</sub>
+
+Co-authored a paper on legal language simplification with LLMs. Runner-up at BotCraft 2024 among 100+ teams. CodeChef 100-day streak, peak 1210; LeetCode 50 and 100-day badges.
+
+<br/>
+
+---
+
+<br/>
+
+## activity
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sachin-0001&theme=github_dark" width="100%" alt="Profile Summary" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sachin-0001&theme=github-compact&hide_border=true&area=true&bg_color=0d1117&color=94a3b8&line=475569&point=e2e8f0" width="100%" alt="Contribution graph" />
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sachin-0001&theme=github_dark" height="175" alt="Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sachin-0001&theme=github_dark" height="170" alt="Stats" />
 &nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachin-0001&theme=github_dark" height="175" alt="Languages" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Sachin-0001&theme=github-dark-blue&hide_border=true&border_radius=6&card_width=500" alt="Streak" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sachin-0001&theme=github-compact&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff" width="100%" alt="Contribution Graph" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sachin-0001&theme=github_dark" height="170" alt="Languages" />
 
 </div>
 
@@ -184,18 +160,10 @@ Every project is built to force a deeper understanding — not to shortcut it.
 
 <div align="center">
 
-<sub>Strong ML engineers don't just run models — they understand why they work.</sub>
+<sub>Open to work on agentic systems, LLM infrastructure, and applied ML research.</sub>
 
 <br/><br/>
 
-**Open to collaborating on ML research, LLM systems, and agentic AI.**
-
-<br/>
-
-[![Email](https://img.shields.io/badge/Get%20in%20touch-sachin.samprit%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sachin.samprit@gmail.com)
-&nbsp;
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-suresh-06782b300/)
+[![Email](https://img.shields.io/badge/sachin.samprit@gmail.com-1e293b?style=flat-square&logo=gmail&logoColor=e2e8f0)](mailto:sachin.samprit@gmail.com)
 
 </div>
-
-<br/>
