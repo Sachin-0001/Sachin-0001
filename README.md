@@ -1,148 +1,147 @@
 <div align="center">
 
-# Sachin Suresh
+# 🤗 &nbsp;Sachin-0001/sachin-suresh
 
 **AI / ML Engineer** &nbsp;·&nbsp; Bengaluru, India
 
-<sub>Agentic runtimes, retrieval systems, and the infrastructure underneath them.</sub>
+<br/>
+
+![agentic-ai](https://img.shields.io/badge/agentic--ai-334155?style=flat-square)
+![rag](https://img.shields.io/badge/rag-334155?style=flat-square)
+![llm-infrastructure](https://img.shields.io/badge/llm--infrastructure-334155?style=flat-square)
+![fine-tuning](https://img.shields.io/badge/fine--tuning-334155?style=flat-square)
+![from-scratch](https://img.shields.io/badge/from--scratch-334155?style=flat-square)
+![text-generation](https://img.shields.io/badge/text--generation-334155?style=flat-square)
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-1e293b?style=flat-square&logo=linkedin&logoColor=e2e8f0)](https://www.linkedin.com/in/sachin-suresh-06782b300/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-1e293b?style=flat-square&logo=vercel&logoColor=e2e8f0)](YOUR_PORTFOLIO_URL)
-[![Email](https://img.shields.io/badge/Email-1e293b?style=flat-square&logo=gmail&logoColor=e2e8f0)](mailto:sachin.samprit@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sachin11105.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sachin-0001)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-suresh-06782b300/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sachin.samprit@gmail.com)
 
 </div>
 
-<br/>
-
 ---
 
-<br/>
+```yaml
+name: sachin-suresh
+role: ai-ml-engineer
+location: bengaluru, india
+base_model: cs-undergrad-dsce
+license: open-to-collaborate
 
-I write the loop before I reach for the framework. Most of what I build sits where model behaviour meets systems engineering: how a reasoning loop actually terminates, why a retriever surfaces the wrong chunk, what a tool-calling agent does when the tool fails. Frameworks abstract away exactly the part worth understanding, so I tend to implement it once by hand first.
+specializes_in:
+  - agent runtimes and planning loops
+  - retrieval pipelines with verifiable citations
+  - parameter-efficient fine-tuning
+  - serving and infrastructure for LLM systems
 
-```
-llm systems
-│
-├─ agents ......... planning loops, tool calling, safeguard models
-├─ retrieval ...... chunking, embeddings, reranking, citations
-├─ models ......... fine-tuning, quantization, evaluation
-├─ serving ........ FastAPI services, queues, streaming, tracing
-└─ infra .......... containers, CI gates, cloud deploys
-```
-
-<br/>
-
----
-
-<br/>
-
-## projects
-
-### Harness
-**A tool-calling agent runtime, written without a framework.**
-
-No LangGraph, no AutoGPT. Six tools (web search, weather, calculator, sandboxed code execution, file I/O, email) wired into a bounded reasoning loop, with a second model screening inputs, tool calls, and outputs before anything executes. Memory is two-tier: an LLM-distilled episodic log feeding a 384-dim FAISS index for recall across sessions.
-
-`Python` · `LangChain` · `Groq` · `FAISS` · `HuggingFace`
-
-[![Source](https://img.shields.io/badge/source-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001/HARNESS_REPO)
-
-<br/>
-
-### UnBind
-**Legal contract analysis with verifiable citations.**
-
-Ingests PDFs, DOCX, and photographed contracts, then fans out clause-by-clause risk analysis in parallel with live progress over SSE. The Q&A engine anchors every answer to character offsets in the source document, so claims can be checked rather than trusted. Payments hardened with HMAC-SHA256 verification and atomic quota enforcement, behind a 299-test suite gated in CI by ruff, eslint, tsc, and secret scanning. Ships as a web app and an npm CLI.
-
-`Next.js 15` · `FastAPI` · `MongoDB` · `ChromaDB` · `Groq` · `Razorpay`
-
-[![Live](https://img.shields.io/badge/live-1e293b?style=flat-square&logo=vercel&logoColor=e2e8f0)](https://unbindai.vercel.app)
-[![Source](https://img.shields.io/badge/source-1e293b?style=flat-square&logo=github&logoColor=e2e8f0)](https://github.com/Sachin-0001/UNBIND_REPO)
-[![npm](https://img.shields.io/badge/npm-1e293b?style=flat-square&logo=npm&logoColor=e2e8f0)](https://www.npmjs.com/package/@sachin-0001/unbind)
-
-<br/>
-
-### Parameter-Efficient Fine-Tuning
-**Adapting 7B models on a single GPU budget.**
-
-QLoRA on Mistral-7B-Instruct-v0.2 over an Alpaca-style instruction set: 41.94M trainable parameters, 0.57% of 7.28B, under 4-bit quantization and tracked end to end with MLflow. A second run applied LoRA at r=16 to Qwen2.5-1.5B-Instruct for conversational generation, touching 0.28% of parameters.
-
-`PyTorch` · `PEFT` · `QLoRA` · `MLflow` · `HuggingFace`
-
-<br/>
-
----
-
-<br/>
-
-## open source
-
-Contributing to **[headlamp-k8s/plugins](https://github.com/headlamp-k8s/plugins)**, the plugin ecosystem for the Kubernetes web UI, as part of LFX Mentorship Term 3. Work so far spans a cert-manager expiry display fix, secret redaction in the AI assistant plugin, and accessibility improvements to dashboard charts.
-
-<br/>
-
----
-
-<br/>
-
-## stack
-
-```
-languages     Python · TypeScript · Go · C++
-
-agentic/llm   LangGraph · LangChain · LangSmith · HuggingFace
-              Groq · Ollama · n8n
-
-ml            PyTorch · scikit-learn · NumPy · Pandas · OpenCV
-              PEFT/QLoRA · MLflow
-
-backend       FastAPI · Pydantic · Next.js
-
-data          PostgreSQL · MongoDB · Redis · ChromaDB · FAISS
-
-cloud         AWS · Docker · GitHub Actions · Airflow · Vercel
+primary_stack: [python, pytorch, langgraph, fastapi, aws]
 ```
 
-<br/>
+## Model Description
 
----
+Writes the loop before reaching for the framework.
 
-<br/>
+Most of the work sits where model behaviour meets systems engineering: how a reasoning loop actually terminates, why a retriever surfaces the wrong chunk, what a tool-calling agent does when the tool fails. Frameworks abstract away exactly the part worth understanding, so the default is to implement it once by hand, then decide whether the abstraction earns its place.
 
-## experience
 
-**Capmob Financial Services** — Lead AI Engineer Intern &nbsp;·&nbsp; <sub>Jun 2026 – Present</sub>
+<div align="center"><sub>The loop behind <a href="https://github.com/Sachin-0001/Harness">Harness</a> — and the shape most of this work takes.</sub></div>
 
-**XTrail Consulting Services** — Junior Developer Intern &nbsp;·&nbsp; <sub>Jan 2026 – Jun 2026</sub>
+## Experience
 
-<sub>Both under NDA. Happy to discuss approach and trade-offs, not internals.</sub>
+| company | role | duration |
+|:---|:---|:---|
+| **Capmob Financial Services** | Lead AI Engineer Intern | Jun 2026 – Present |
+| **XTrail Consulting Services** | Junior Developer Intern | Jan 2026 – Jun 2026 |
 
-<br/>
 
----
+## Downstream Applications
 
-<br/>
+<table>
+<tr><td width="33%" valign="top">
 
-## background
+### 🧩 Harness
 
-**B.E. Computer Science**, Dayananda Sagar College of Engineering &nbsp;·&nbsp; <sub>2023 – 2027</sub>
+**Agent runtime, no framework**
 
-Co-authored a paper on legal language simplification with LLMs. Runner-up at BotCraft 2024 among 100+ teams. CodeChef 100-day streak, peak 1210; LeetCode 50 and 100-day badges.
+No LangGraph, no AutoGPT. Six tools — search, weather, calculator, sandboxed code exec, file I/O, email — in a bounded reasoning loop, with a second model screening inputs, tool calls, and outputs before anything runs. Two-tier memory: an LLM-distilled episodic log feeding a 384-dim FAISS index for cross-session recall.
 
-<br/>
+`Python` `LangChain` `Groq` `FAISS`
 
----
+[**Source →**](https://github.com/Sachin-0001/Harness)
 
-<br/>
+</td><td width="33%" valign="top">
 
-## activity
+### 📄 UnBind
+
+**Contract analysis, citation-verified**
+
+PDFs, DOCX, and photographed contracts fan out into parallel clause-by-clause risk analysis streamed over SSE. Every Q&A answer anchors to character offsets in the source, so claims are checkable. HMAC-SHA256 payment verification and atomic quotas behind a 299-test CI gate. Ships as a web app and an npm CLI.
+
+`Next.js` `FastAPI` `ChromaDB` `Groq`
+
+[**Live →**](https://unbindai.vercel.app/) &nbsp;·&nbsp; [**Source →**](https://github.com/Sachin-0001/UnBind) &nbsp;·&nbsp; [**npm →**](https://www.npmjs.com/package/@sachin-0001/unbind)
+
+</td><td width="33%" valign="top">
+
+### 🔬 PEFT Runs
+
+**7B adaptation on one GPU**
+
+QLoRA on Mistral-7B-Instruct-v0.2 over an Alpaca-style instruction set: 41.94M trainable params, 0.57% of 7.28B, under 4-bit quantization, tracked end to end in MLflow. A second run applied LoRA at r=16 to Qwen2.5-1.5B-Instruct for conversational generation, touching 0.28% of params.
+
+`PyTorch` `PEFT` `QLoRA` `MLflow`
+
+</td></tr>
+</table>
+
+## Evaluation Results
+
+| metric | value |
+|:---|:---|
+| tools wired into a hand-rolled agent loop | **6** |
+| tests gating the UnBind pipeline in CI | **299** &nbsp;<sub>281 pytest · 18 vitest</sub> |
+| deployable surfaces shipped from one codebase | **3** &nbsp;<sub>web · api · cli</sub> |
+| trainable parameters at 4-bit, Mistral-7B | **0.57%** &nbsp;<sub>41.94M / 7.28B</sub> |
+| upstream patches to a CNCF project | **4** |
+
+## Training Data
+
+**Formal**  
+B.E. Computer Science, Dayananda Sagar College of Engineering, Bangalore &nbsp;·&nbsp; <sub>2023 – 2027</sub>
+
+**Upstream**  
+Contributing to **[headlamp-k8s/plugins](https://github.com/headlamp-k8s/plugins)**, the plugin ecosystem for the Kubernetes web UI, as part of LFX Mentorship Term 3. Patches so far cover cert-manager expiry display, secret redaction in the AI assistant plugin, and accessibility fixes to dashboard charts.
+
+**Prior**  
+Co-authored a paper on legal language simplification with LLMs. Runner-up at BotCraft 2024 among 100+ teams. [CodeChef](https://www.codechef.com/users/sachin_0111) 100-day streak, peak 1210 &nbsp;·&nbsp; [LeetCode](https://leetcode.com/u/_sachin_01_/) 50- and 100-day badges.
+
+## Stack
+
+| | |
+|:---|:---|
+| **languages** | Python · TypeScript · Go · C++ |
+| **agentic / llm** | LangGraph · LangChain · LangSmith · HuggingFace · Groq · Ollama · n8n |
+| **ml** | PyTorch · scikit-learn · NumPy · Pandas · OpenCV · PEFT/QLoRA · MLflow |
+| **backend** | FastAPI · Pydantic · Next.js |
+| **data** | PostgreSQL · MongoDB · Redis · ChromaDB · FAISS |
+| **cloud** | AWS · Docker · GitHub Actions · Airflow · Vercel |
+
+## Intended Use
+
+Agentic systems, LLM infrastructure, and applied ML research. Open to collaboration and to roles in any of the three.
+
+## Out-of-Scope Use
+
+Known to over-invest in understanding a system before shipping it. Considered working as intended.
+
+## Training Curves
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sachin-0001&theme=github-compact&hide_border=true&area=true&bg_color=0d1117&color=94a3b8&line=475569&point=e2e8f0" width="100%" alt="Contribution graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sachin-0001&theme=github-compact&hide_border=true&area=true&bg_color=0d1117&color=a78bfa&line=7c3aed&point=e2e8f0" width="100%" alt="Contribution graph" />
 
 <br/>
 
@@ -152,18 +151,20 @@ Co-authored a paper on legal language simplification with LLMs. Runner-up at Bot
 
 </div>
 
-<br/>
+## Citation
 
----
-
-<br/>
+```bibtex
+@software{suresh_2026,
+  author  = {Suresh, Sachin},
+  title   = {Agentic runtimes, retrieval systems,
+             and the infrastructure underneath them},
+  year    = {2026},
+  url     = {https://github.com/Sachin-0001},
+  contact = {sachin.samprit@gmail.com}
+}
+```
 
 <div align="center">
-
-<sub>Open to work on agentic systems, LLM infrastructure, and applied ML research.</sub>
-
-<br/><br/>
-
-[![Email](https://img.shields.io/badge/sachin.samprit@gmail.com-1e293b?style=flat-square&logo=gmail&logoColor=e2e8f0)](mailto:sachin.samprit@gmail.com)
-
+<br/>
+<sub>Build from scratch. Understand deeply. Ship with confidence.</sub>
 </div>
